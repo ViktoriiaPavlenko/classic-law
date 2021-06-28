@@ -5,7 +5,8 @@
   }
   console.log(refs.links)
   refs.links.forEach((link) => {
-    link.addEventListener('click', (e) => {
+      link.addEventListener('click', (e) => {
+        console.log(e.target.nextElementSibling)
       if (e.target.nextElementSibling.dataset.showList === '') {
         toggleList(e.target.nextElementSibling)
       }
