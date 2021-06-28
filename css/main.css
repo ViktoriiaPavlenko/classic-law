@@ -584,6 +584,7 @@ summary {
 
 .mobile-menu-nav {
   margin-top: 77px;
+  margin-bottom: 21px;
 }
 
 .is-hidden {
@@ -594,13 +595,31 @@ summary {
   margin-bottom: 15px;
 }
 
+.mobile-menu-nav__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .mobile-menu-nav__title {
+  margin-right: 8px;
   font-family: Gilroy;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-transform: uppercase;
   color: #294b29;
+  cursor: pointer;
+}
+
+.open-button {
+  border: none;
+  background-color: #65c466;
+  cursor: pointer;
+}
+
+.open-icon {
+  fill: #294b29;
 }
 
 .submenu {
@@ -617,5 +636,94 @@ summary {
 
 .submenu__item:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.contacts-list {
+  margin-bottom: 20px;
+}
+
+.contacts-list__item:not(:last-child) {
+  margin-bottom: 3px;
+}
+
+.contacts-list__link {
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.contacts-list__icon {
+  margin-right: 8px;
+}
+
+.contacts-list__item--link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.17;
+}
+
+.menu__submit-button {
+  margin-bottom: 28px;
+  padding: 16px 70px 14px;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  background: #ffffff;
+  color: #65c466;
+}
+
+.registration-wrapper {
+  text-align: center;
+}
+
+.registration-wrapper__icon {
+  margin-bottom: 5px;
+}
+
+.registration-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.registration-list__item:not(:last-child) {
+  margin-right: 11px;
+}
+
+.registration-list__link {
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.registration-wrapper__item {
+  position: relative;
+}
+
+.registration-wrapper__item::after {
+  position: absolute;
+  right: -11px;
+  bottom: 8px;
+  display: block;
+  content: '';
+  width: 11px;
+  height: 2px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  -webkit-transform: rotate(-65deg);
+          transform: rotate(-65deg);
 }
 /*# sourceMappingURL=main.css.map */

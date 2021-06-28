@@ -64,6 +64,7 @@
 }
 .mobile-menu-nav {
   margin-top: 77px;
+  margin-bottom: 21px;
 }
 .is-hidden {
   display: none;
@@ -71,7 +72,11 @@
 .mobile-menu-nav__item:not(:last-child) {
   margin-bottom: 15px;
 }
+.mobile-menu-nav__wrapper {
+  display: flex;
+}
 .mobile-menu-nav__title {
+  margin-right: 8px;
   font-family: $gilroy-ff;
   font-weight: 400;
   font-size: 16px;
@@ -79,7 +84,21 @@
   text-transform: uppercase;
 
   color: $secondary-green-color;
+  cursor: pointer;
 }
+.open-button {
+  border: none;
+  background-color: $green-color;
+  cursor: pointer;
+}
+.open-icon {
+  fill: $secondary-green-color;
+}
+// .close-icon {
+//   opacity: 0;
+//   visibility: hidden;
+//   fill: $secondary-green-color;
+// }
 .submenu {
   margin-top: 10px;
   margin-bottom: 19px;
@@ -92,4 +111,78 @@
 }
 .submenu__item:not(:last-child) {
   margin-bottom: 10px;
+}
+.contacts-list {
+  margin-bottom: 20px;
+}
+.contacts-list__item:not(:last-child) {
+  margin-bottom: 3px;
+}
+.contacts-list__link {
+  font-family: $gilroy-ff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+
+  color: $white-color;
+}
+.contacts-list__icon {
+  margin-right: 8px;
+}
+.contacts-list__item--link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.17;
+}
+.menu__submit-button {
+  margin-bottom: 28px;
+  padding: 16px 70px 14px;
+  border: 2px solid $white-color;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: $gilroy-ff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  background: $white-color;
+  color: $green-color;
+}
+.registration-wrapper {
+  text-align: center;
+}
+.registration-wrapper__icon {
+  margin-bottom: 5px;
+}
+.registration-list {
+  display: flex;
+  justify-content: center;
+}
+.registration-list__item:not(:last-child) {
+  margin-right: 11px;
+}
+.registration-list__link {
+  font-family: $gilroy-ff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.3;
+  text-transform: uppercase;
+
+  color: $white-color;
+}
+.registration-wrapper__item {
+  position: relative;
+}
+.registration-wrapper__item::after {
+  position: absolute;
+  right: -11px;
+  bottom: 8px;
+  display: block;
+  content: '';
+  width: 11px;
+  height: 2px;
+  background-color: $white-color;
+  border-radius: 2px;
+  transform: rotate(-65deg);
 }
