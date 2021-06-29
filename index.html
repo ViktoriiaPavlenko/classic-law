@@ -31,34 +31,38 @@
                         </svg>
                     </button>
                 </div>
-                <label class="menu__label">
-                    <input class="menu__input" type="text">
+                <div class="search">
+                    <label class="menu__label">
+                        <input class="menu__input" type="text">
+                    </label>
                     <button class="menu__search-btn" type="submit">
                         <svg class="menu__icon" width="18" height="18">
                             <use href="./images/sprite.svg#search"></use>
                         </svg>
                     </button>
-                </label>
+                </div>
                 <ul class="mobile-menu-nav">
                     <li class="mobile-menu-nav__item">
-                        <div class="mobile-menu-nav__wrapper" data-toggle-list>
-                            <h2 class="mobile-menu-nav__title">Компания</h2>
+                        <h2 class="mobile-menu-nav__title" data-toggle-list>Компания
                             <button class="open-button" type="button">
                                 <svg class="open-icon" width="12" height="12">
                                     <use href="./images/sprite.svg#open"></use>
                                 </svg>
-                                <!-- <svg class="close-icon" width="12" height="12">
-                                    <use href="./images/sprite.svg#close"></use>
-                                </svg> -->
                             </button>
-                        </div>
+                        </h2>
                         <ul class="submenu is-hidden" data-show-list>
                             <li class="submenu__item"><a class="submenu__link" href="#">Контакты</a></li>
                             <li class="submenu__item"><a class="submenu__link" href="#">О компании</a></li>
                         </ul>
                     </li>
                     <li class="mobile-menu-nav__item">
-                        <h2 class="mobile-menu-nav__title" data-toggle-list>Каталог</h2>
+                        <h2 class="mobile-menu-nav__title" data-toggle-list>Каталог
+                            <button class="open-button" type="button" data-toggle-list>
+                                <svg class="open-icon" width="12" height="12">
+                                    <use href="./images/sprite.svg#open"></use>
+                                </svg>
+                            </button>
+                        </h2>
                         <ul class="submenu is-hidden" data-show-list>
                             <li class="submenu__item"><a class="submenu__link" href="#">Оконные системы</a></li>
                             <li class="submenu__item"><a class="submenu__link" href="#">Фасадные системы</a></li>
@@ -119,13 +123,37 @@
             </div>
         </div>
     </header>
-    <!-- <main>
-        <section class="hero">
-            <h1 class="hero__title">Задайте вопрос юристу онлайн</h1>
-            <p>Компания специализируется на оказании широкого спектра услуг как для корпоративных клиентов так и для частных лиц.
-            Профессионализм и ответственность ключевые преимущества нашей компании.</p>
+    <main>
+        <section class="question-section">
+            <div class="question-section__container container">
+                <h2 class="question-section__title">Задайте вопрос юристу онлайн</h2>
+                <p class="question-section__text">Компания специализируется на оказании широкого спектра услуг как для корпоративных клиентов так и для частных лиц.
+                    Профессионализм и ответственность ключевые преимущества нашей компании.
+                </p>
+                <div class="themis-wrapper">
+                    <img src="./images/themis.png" alt="Фемида">
+                </div>
+                <form class="question-form" action="#" method="POST">
+                    <label class="question-form__label">
+                        <input class="question-form__input" type="tel" name="tel" placeholder="Введите номер Вашего телефона..." required>
+                    </label>
+                    <label class="question-form__label question-label">
+                        <textarea class="question-form__input question-form__textarea" name="comment" placeholder="Введите Ваш вопрос..." required></textarea>
+                    </label>
+                    <div class="question-form__checkbox-wrapper">
+                        <label class="question-form__checkbox">
+                            <input class="checkbox" type="checkbox" name="policy">
+                            <span class=""></span>
+                            <span class="checkbox-text">
+                                Нажимая кнопку “Отправить” вы соглашаетесь с политикой конфидециальности
+                            </span>
+                        </label>
+                        <button class="question-form__button" type="submit">Отправить вопрос</button>
+                    </div>
+                </form>
+            </div>
         </section>
-    </main> -->
+    </main>
     <script src="./js/menu.js"></script>
     <script src="./js/mobile-menu.js"></script>
 </body>

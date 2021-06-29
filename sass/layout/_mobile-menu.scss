@@ -32,17 +32,18 @@
 .menu__close-icon {
   fill: $white-color;
 }
-.menu__label {
+.search {
   position: absolute;
-  top: 80px;
   width: 270px;
+  top: 80px;
+}
+.menu__label {
   background: $white-color;
   box-shadow: 0px 0px 15px $shadow-color;
   border-radius: 10px;
   border: none;
 }
 .menu__input {
-  position: relative;
   width: 100%;
   height: 35px;
   padding-top: 7px;
@@ -72,11 +73,7 @@
 .mobile-menu-nav__item:not(:last-child) {
   margin-bottom: 15px;
 }
-.mobile-menu-nav__wrapper {
-  display: flex;
-}
 .mobile-menu-nav__title {
-  margin-right: 8px;
   font-family: $gilroy-ff;
   font-weight: 400;
   font-size: 16px;
@@ -90,15 +87,11 @@
   border: none;
   background-color: $green-color;
   cursor: pointer;
+  pointer-events: none;
 }
 .open-icon {
   fill: $secondary-green-color;
 }
-// .close-icon {
-//   opacity: 0;
-//   visibility: hidden;
-//   fill: $secondary-green-color;
-// }
 .submenu {
   margin-top: 10px;
   margin-bottom: 19px;
@@ -136,7 +129,7 @@
 }
 .menu__submit-button {
   margin-bottom: 28px;
-  padding: 16px 66px 14px;
+  padding: 16px 70px 14px;
   border: 2px solid $white-color;
   border-radius: 5px;
   cursor: pointer;
@@ -177,7 +170,7 @@
 .registration-wrapper__item::after {
   position: absolute;
   right: -12px;
-  bottom: 7px;
+  bottom: 8px;
   display: block;
   content: '';
   width: 12px;

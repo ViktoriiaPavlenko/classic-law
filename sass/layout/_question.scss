@@ -1,0 +1,30 @@
+.question-section__container {
+  padding: 26px 19px 22px;
+}
+.question-section__title {
+  margin-bottom: 20px;
+  font-family: $gilroy-ff;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 1.22;
+  text-transform: uppercase;
+
+  color: $green-color;
+}
+.question-section__text {
+  font-family: $gilroy-ff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 1.15;
+
+  color: $secondary-text-color;
+}
+.themis-wrapper {
+  margin-bottom: 32px;
+  background-image: url(../../images/scales.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: -12%;
+  background-position-y: 156%;
+}
